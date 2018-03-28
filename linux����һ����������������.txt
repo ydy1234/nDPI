@@ -1,0 +1,9 @@
+1.将open_ndpiReader.sh脚本cp到/etc/init.d中
+2.cd /etc/init.d
+3.chmod 755 open_ndpiReader.sh
+4.update-rc.d open_ndpiReader defaults 95
+5.reboot机子
+
+//下面步骤是卸载启动脚本的步骤
+*6.cd etc/init.d
+*7.update-rc.d -f open_ndpiReader remove
