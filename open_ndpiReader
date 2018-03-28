@@ -1,0 +1,11 @@
+#! /bin/bash
+App=/usr/src/ndpi-netfilter/nDPI/example
+cd $App
+while :  
+do  
+    #print PID num
+    echo "PID Num= $$"
+    ./ndpiReader -i eth0 -s 5&  
+    sleep 30s
+done  
+
